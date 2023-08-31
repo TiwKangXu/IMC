@@ -1,0 +1,17 @@
+1. when using onClick={}, we must pass in a lambda function.
+    i.e. onClick={() => doSomething} OR
+    i.e. function doSomething = () => {  }
+         onClick={doSomething}
+
+2. when calling the setterFunction in useXXX (useState / useReducer), we need to pass in an argument.
+    - useState: usually just one argument with a single type (LoggedIn.tsx). For one argument with multiple types, 
+                check User.tsx
+    - useReducer: usually multiple arguments encapsulated into a dictionary (Counter.tsx)
+
+. const [stateVariable, setterFunction] = useState(initialState)
+    - the type of stateVariable relies on the type of initialState we passed in
+
+. const [stateVariable, setterFunction] = useReducer(reducer, initialState)
+    - we need to define our reducer
+    - the type of stateVariable relies on the type of initialState we passed in
+
