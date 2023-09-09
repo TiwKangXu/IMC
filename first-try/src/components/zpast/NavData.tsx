@@ -1,4 +1,4 @@
-import { NavItem } from "../models/NavItem";
+import { NavItem } from "../../models/NavItem";
 import { FaUserCircle } from "react-icons/fa"
 
 

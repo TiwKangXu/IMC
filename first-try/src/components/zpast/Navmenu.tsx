@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import styled from 'styled-components'
-import { NavItem } from '../models/NavItem';
+import { NavItem } from '../../models/NavItem';
 import { Link } from 'react-router-dom';
 
 type NavbarLinkProps = {

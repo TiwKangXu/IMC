@@ -1,6 +1,5 @@
-import React, { FC } from "react";
-import { SidebarItem } from "../models/SidebarItem";
-import styles from './Sidebar.module.css';
+import { FC } from "react";
+import { SidebarItem } from "../../models/SidebarItem";
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 

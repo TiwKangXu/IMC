@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Nav.module.css';
 import logoSvg from '../assets/logo.png';
-import * as data from './links.json';
+import * as data from '../links.json';
 const linksString = JSON.stringify(data);
 const links = JSON.parse(linksString).links;
 

@@ -1,6 +1,6 @@
 import { AiFillCaretDown, AiFillCaretUp, AiOutlineDashboard } from "react-icons/ai";
 import { BsBuilding } from "react-icons/bs";
-import { SidebarItem } from "../models/SidebarItem";
+import { SidebarItem } from "../../models/SidebarItem";
 
 export const SidebarData: SidebarItem[] = [
     {
