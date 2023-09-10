@@ -3,8 +3,6 @@ import { KSidebarItem } from "../../models/KSidebarItem";
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-
-
 type SidebarLinkProps = {
     item: KSidebarItem;
 }
