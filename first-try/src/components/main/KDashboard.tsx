@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import KUpcomingShips from './upcomingships/KUpcomingShips';
+import Quayside from './quayside/Quayside';
 
 
 const KDashboardContainer = styled.div`
@@ -42,22 +43,22 @@ const EmissionSection = styled.div`
 
 const KDashboard: React.FC<{}> = () => {
 
-    return (
-        <KDashboardContainer>
-            <QuaySection>
-                <div>Quay</div>
-            </QuaySection>
-            <UpcomingSection>
-                <KUpcomingShips></KUpcomingShips>
-            </UpcomingSection>
-            <BerthSection>
-                <div>Berth</div>
-            </BerthSection>
-            <EmissionSection>
-                <div>Emission</div>
-            </EmissionSection>
-        </KDashboardContainer>
-    )
+  return (
+    <KDashboardContainer>
+      <QuaySection>
+        <Quayside></Quayside>
+      </QuaySection>
+      <UpcomingSection>
+        <KUpcomingShips></KUpcomingShips>
+      </UpcomingSection>
+      <BerthSection>
+        <div>Berth</div>
+      </BerthSection>
+      <EmissionSection>
+        <div>Emission</div>
+      </EmissionSection>
+    </KDashboardContainer>
+  )
 }
 
 export default KDashboard;

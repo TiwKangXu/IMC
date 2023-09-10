@@ -1,10 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import Title from './UpcomingShipsTitle';
-import VesselInfo from './VesselInfo';
-import { VesselData } from './VesselData';
+import VesselInfo from './BerthInfo';
+import { VesselData } from './BerthData';
 
-const VesselContainer = styled.div`
+const BerthsContainer = styled.div`
     width: 100%;
     height: 400px;
     background-color: gray;
@@ -13,14 +12,14 @@ const VesselContainer = styled.div`
     align-items: center; /* Center children horizontally */
 `
 
-const Vessels: React.FC<{}> = () => {
+const Berths: React.FC<{}> = () => {
     return (
-        <VesselContainer>
+        <BerthsContainer>
             {VesselData.map((item, index) => {
                 return <VesselInfo item={item} key={index} />
             })}
-        </VesselContainer>
+        </BerthsContainer>
     )
 }
 
-export default Vessels;
+export default Berths;

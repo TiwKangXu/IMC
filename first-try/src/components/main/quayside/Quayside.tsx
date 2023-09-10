@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import Title from './UpcomingShipsTitle';
-import Vessels from './Vessels';
+import Title from './QuaysideTitle';
+import Vessels from './Berths';
 
-const UpcomingContainer = styled.div`
+const QuaysideContainer = styled.div`
     background-color: beige;
     display: flex;
     flex-direction: column; /* Arrange children vertically */
@@ -11,13 +11,13 @@ const UpcomingContainer = styled.div`
     padding: 20px;
 `
 
-const KUpcomingShips: React.FC<{}> = () => {
+const Quayside: React.FC<{}> = () => {
     return (
-        <UpcomingContainer>
+        <QuaysideContainer>
             <Title></Title>
             <Vessels></Vessels>
-        </UpcomingContainer>
+        </QuaysideContainer>
     )
 }
 
-export default KUpcomingShips;
+export default Quayside;
