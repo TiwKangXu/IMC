@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import KUpcomingShips from './upcomingships/KUpcomingShips';
 import Quayside from './quayside/Quayside';
+import Emission from './emission/Emission';
 
 
 const KDashboardContainer = styled.div`
@@ -69,7 +70,7 @@ const KDashboard: React.FC<{}> = () => {
         </UpcomingSection>
 
         <EmissionSection>
-          <div>Emission</div>
+          <Emission></Emission>
         </EmissionSection>
       </Column2>
 
