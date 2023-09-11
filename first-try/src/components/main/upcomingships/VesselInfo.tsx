@@ -24,7 +24,6 @@ const LogoContainer = styled(Link)`
     font-size: 100px;
     background-color: #dedede;
     border-radius: 15px 0px 0px 15px; 
-
     color: #424242;
 `
 

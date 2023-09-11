@@ -2,11 +2,11 @@ import { CompanyItem } from "../../../models/CompanyItem";
 import CNST from './../../../assets/CNST.png';
 import WalBrick from './../../../assets/WalBrick.png';
 import CargoXpress from './../../../assets/CargoExpress.png'
-import OceanWaves from './../../../assets/OceanWaves.png'
-import GlobalTransit from './../../../assets/GlobalTransit.png'
+import OceanWaves from './../../../assets/Ocean.png'
+import GlobalTransit from './../../../assets/GT.png'
 import Ecoship from './../../../assets/Ecoship.png'
 import Wheeling from './../../../assets/Wheeling.png'
-import Piping from './../../../assets/Piping.png'
+import Piping from './../../../assets/PP.png'
 
 
 export const CompanyData: CompanyItem[] = [

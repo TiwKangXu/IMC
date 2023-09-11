@@ -3,7 +3,6 @@ import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import KNavBar from './components/navbar/KNavBar';
 import KSidebar from './components/sidebar/KSidebar';
-import KUpcomingShips from './components/main/upcomingships/KUpcomingShips';
 import KDashboard from './components/main/KDashboard';
 import KIncentive from './components/main/KIncentive';
 import styled from 'styled-components';
@@ -31,6 +30,7 @@ function App() {
           <Routes>
             <Route path="/dashboard" Component={KDashboard}></Route>
             <Route path="/incentive" Component={KIncentive}></Route>
+            <Route path="" element={<KDashboard />} />
           </Routes>
         </MainContainer>
       </AppContainer>

@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { IconContext } from 'react-icons/lib';
-import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
 import { KSidebarData } from './KSidebarData';
 import KSubmenu from './KSubmenu';
 

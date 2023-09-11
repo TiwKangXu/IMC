@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './KNavBar.module.css';
 import logoSvg from '../../assets/IMC.png';
 import * as data from '../links.json';
+import styled from 'styled-components';
 const linksString = JSON.stringify(data);
 const links = JSON.parse(linksString).links;
 
@@ -10,16 +11,22 @@ type Link = {
     href: string;
 }
 
+const LinkContainer = styled.div`
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+`
+
 const Links: React.FC<{ links: Link[] }> = ({ links }) => {
     return (
         <div className={styles['links-container']}>
             {
                 links.map((link: Link) => {
                     return (
-                        <div key={link.href} className={styles['link']}>
-                            <a href={link.href}>
+                        <div key={link.href} className={styles['k-link']}>
+                            <LinkContainer>
                                 {link.label}
-                            </a>
+                            </LinkContainer>
                         </div>
                     )
                 })
