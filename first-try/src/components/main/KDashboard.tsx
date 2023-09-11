@@ -7,7 +7,11 @@ import Quayside from './quayside/Quayside';
 const KDashboardContainer = styled.div`
   display: grid;
   grid-template-columns: 2fr 2fr; /* Divide into 2 columns (adjust proportions as needed) */
-  grid-template-rows: 5fr 3fr; /* Divide into 2 rows (adjust proportions as needed) */
+  // grid-template-columns: auto; /* Divide into 2 columns (adjust proportions as needed) */
+
+  // grid-template-rows: 5fr 3fr; /* Divide into 2 rows (adjust proportions as needed) */
+  grid-template-rows: auto; /* Divide into 2 rows (adjust proportions as needed) */
+
   gap: 20px; /* Adjust the gap between grid items */
   width: 100%;
   height: 100%;

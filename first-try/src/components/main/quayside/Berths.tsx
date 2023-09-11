@@ -5,7 +5,7 @@ import { VesselData } from './BerthData';
 
 const BerthsContainer = styled.div`
     width: 100%;
-    height: 400px;
+    height: auto;
     background-color: gray;
     display: flex;
     flex-direction: column; /* Arrange children vertically */

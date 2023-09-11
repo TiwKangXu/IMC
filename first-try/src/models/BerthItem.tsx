@@ -1,6 +1,8 @@
+import { QueueVessel } from "./QueueVessel";
+
 export interface BerthItem {
     berthID: number;
-    currentBerthIMO: string;
-    progress: string;
-    queueingBerth: string[];
+    currentBerthVIN: string;
+    progress: number;
+    queueingBerth: QueueVessel[];
 }
