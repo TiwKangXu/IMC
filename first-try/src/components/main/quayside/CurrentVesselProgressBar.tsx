@@ -17,19 +17,33 @@ const ProgressBarContainer = styled.div`
     background-color: lightgray;
     border-radius: 5px;
     margin-top: 5px;
+    // display: flex;
+    // flex-direction: row;
 `
 const ProgressFiller = styled.div<ProgressFillerProps>`
     height: 100%;
     width: ${(props) => props.progress || '0'}%; /* Adjust progress value */
     background-color: green;
     border-radius: 5px;
+    display: flex;
+    justify-content: center;
+`
+
+const ProgressPercentageContainer = styled.div`
+    width: ;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
 `
 
 const CurrentVesselProgressBar: React.FC<CurrentVesselProgressBarProps> = ({ progress }) => {
 
     return (
         <ProgressBarContainer>
-            <ProgressFiller progress={progress}></ProgressFiller>
+            <ProgressFiller progress={progress}>
+                <ProgressPercentageContainer>{progress} %</ProgressPercentageContainer>
+            </ProgressFiller>
+
         </ProgressBarContainer>
     )
 }

@@ -6,61 +6,74 @@ import Quayside from './quayside/Quayside';
 
 const KDashboardContainer = styled.div`
   display: grid;
-  grid-template-columns: 2fr 2fr; /* Divide into 2 columns (adjust proportions as needed) */
-  // grid-template-columns: auto; /* Divide into 2 columns (adjust proportions as needed) */
-
-  // grid-template-rows: 5fr 3fr; /* Divide into 2 rows (adjust proportions as needed) */
-  grid-template-rows: auto; /* Divide into 2 rows (adjust proportions as needed) */
-
-  gap: 20px; /* Adjust the gap between grid items */
+  grid-template-columns: 1fr 1fr; /* Divide into 2 columns (adjust proportions as needed) */
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line when needed */
+  justify-content: space-between; /* Space sections evenly */
+  gap: 5px; /* Adjust the gap between sections */
   width: 100%;
   height: 100%;
 `;
 
-const QuaySection = styled.div`
+const Column1 = styled.div`
   grid-column: 1 / span 1; /* Span 1 column */
-  grid-row: 1 / span 1; /* Span 1 row */
+  padding: 10px;
+  flex: 1;
+`
+
+const Column2 = styled.div`
+  grid-column: 1 / span 1; /* Span 1 column */
+  padding: 10px;
+  flex: 1;
+`
+
+const QuaySection = styled.div`
   background-color: #eee;
   padding: 20px;
+  flex: 1;
 `;
 
 const UpcomingSection = styled.div`
-  grid-column: 2 / span 1; /* Span 1 column */
-  grid-row: 1 / span 1; /* Span 1 row */
   background-color: #eee;
   padding: 20px;
+  flex: 1;
 `;
 
 const BerthSection = styled.div`
-  grid-column: 1 / span 1; /* Span 1 column */
-  grid-row: 2 / span 1; /* Span 1 row */
   background-color: #eee;
   padding: 20px;
+  flex: 1;
 `;
 
 const EmissionSection = styled.div`
-  grid-column: 2 / span 1; /* Span 1 column */
-  grid-row: 2 / span 1; /* Span 1 row */
   background-color: #eee;
   padding: 20px;
+  flex: 1;
 `;
 
 const KDashboard: React.FC<{}> = () => {
 
   return (
     <KDashboardContainer>
-      <QuaySection>
-        <Quayside></Quayside>
-      </QuaySection>
-      <UpcomingSection>
-        <KUpcomingShips></KUpcomingShips>
-      </UpcomingSection>
-      <BerthSection>
-        <div>Berth</div>
-      </BerthSection>
-      <EmissionSection>
-        <div>Emission</div>
-      </EmissionSection>
+      <Column1>
+        <QuaySection>
+          <Quayside></Quayside>
+        </QuaySection>
+        <BerthSection>
+          <div>Berth</div>
+        </BerthSection>
+      </Column1>
+      <Column2>
+        <UpcomingSection>
+          <KUpcomingShips></KUpcomingShips>
+        </UpcomingSection>
+
+        <EmissionSection>
+          <div>Emission</div>
+        </EmissionSection>
+      </Column2>
+
+
     </KDashboardContainer>
   )
 }

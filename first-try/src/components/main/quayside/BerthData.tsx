@@ -23,7 +23,7 @@ export const VesselData: BerthItem[] = [
     }, {
         berthID: 2,
         currentBerthVIN: "IMO 2000000",
-        progress: 20,
+        progress: 15,
         queueingBerth: [
             {
                 VIN: "IMO 2000001",
@@ -37,7 +37,7 @@ export const VesselData: BerthItem[] = [
     }, {
         berthID: 3,
         currentBerthVIN: "IMO 3000000",
-        progress: 90,
+        progress: 100,
         queueingBerth: [
             {
                 VIN: "IMO 4000001",
