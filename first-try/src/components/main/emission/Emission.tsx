@@ -5,6 +5,7 @@ import EmissionContent from './EmissionContent';
 
 const EmissionContainer = styled.div`
     background-color: beige;
+    height: auto;
     display: flex;
     flex-direction: column; /* Arrange children vertically */
     align-items: center; /* Center children horizontally */

@@ -3,6 +3,9 @@ import styled from 'styled-components';
 import KUpcomingShips from './upcomingships/KUpcomingShips';
 import Quayside from './quayside/Quayside';
 import Emission from './emission/Emission';
+import EmissionContent from './emission/EmissionContent';
+import LineChart from './emission/LineChart';
+import Add from './add/Add';
 
 
 const KDashboardContainer = styled.div`
@@ -55,13 +58,14 @@ const EmissionSection = styled.div`
 const KDashboard: React.FC<{}> = () => {
 
   return (
+
     <KDashboardContainer>
       <Column1>
         <QuaySection>
           <Quayside></Quayside>
         </QuaySection>
         <BerthSection>
-          <div>Berth</div>
+          <Add></Add>
         </BerthSection>
       </Column1>
       <Column2>
