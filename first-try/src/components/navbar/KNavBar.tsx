@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './KNavBar.module.css';
-import logoSvg from '../../assets/IMC.png';
+import logoSvg from '../../assets/AIPMS.png';
 import * as data from '../links.json';
 import styled from 'styled-components';
 const linksString = JSON.stringify(data);
